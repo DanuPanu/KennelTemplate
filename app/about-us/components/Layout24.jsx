@@ -27,7 +27,7 @@ export function Layout24() {
           <div className="flex justify-center">
             <Image
               src="/celine-sayuri-tagami-2s6ORaJY6gI-unsplash.jpg"
-              className="rounded object-cover"
+              className="rounded shadow-lg object-cover"
               alt="Koiran kuva"
               width={400}
               height={200}

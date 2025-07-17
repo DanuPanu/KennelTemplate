@@ -21,7 +21,7 @@ export type Layout240Props = React.ComponentPropsWithoutRef<"section"> & Partial
 export const Layout240 = (props: Layout240Props) => {
     const { sections, heading } = { ...props, ...Layout240Defaults };
     return (
-        <section id="relume" className="px-[5%] pb-16 md:pb-24 lg:pb-28">
+        <section id="relume" className="px-[5%] pb-16 md:pb-20 lg:py-24 bg-main-beige w-screen flex flex-col items-center justify-center">
             <div className="container">
                 <div className="rb-12 mx-auto mb-12 w-full max-w-lg text-center md:mb-18 lg:mb-20">
                     <h2 className="text-4xl font-bold leading-[1.2] md:text-5xl lg:text-6xl">{heading}</h2>
@@ -30,7 +30,7 @@ export const Layout240 = (props: Layout240Props) => {
                     {sections.map((section, index) => (
                         <div key={index} className="flex w-full flex-col items-center text-center">
                             <div className="rb-6 mb-6 md:mb-8">
-                                <Image width={800} height={600} src={section.image.src} alt={section.image.alt} />
+                                <Image className="rounded shadow-lg" width={800} height={600} src={section.image.src} alt={section.image.alt} />
                             </div>
                             <h3 className="mb-3 text-xl font-bold md:mb-4 md:text-2xl">{section.heading}</h3>
                             <p>{section.description}</p>

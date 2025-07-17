@@ -21,7 +21,7 @@ export function Layout250() {
               <Image
                 src="/anthony-persegol-xAqTU0VZRyc-unsplash.jpg"
                 alt="Relume placeholder image"
-                className="rounded"
+                className="rounded shadow-lg"
                 width={400}
                 height={200}
               />
@@ -44,7 +44,7 @@ export function Layout250() {
               <Image
                 src="/enis-yavuz-KKtuRtGkDys-unsplash.jpg"
                 alt="Relume placeholder image"
-                className="rounded"
+                className="rounded shadow-lg"
                 width={400}
                 height={200}
                 />
@@ -68,7 +68,7 @@ export function Layout250() {
               <Image
                 src="/bill-stephan-9LkqymZFLrE-unsplash.jpg"
                 alt="Relume placeholder image"
-                className="rounded"
+                className="rounded shadow-lg"
                 width={400}
                 height={200}
               />

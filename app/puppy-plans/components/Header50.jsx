@@ -22,6 +22,7 @@ export function Header50() {
       </div>
       <div className="absolute inset-0 z-0">
         <Image
+          priority
           src="/michel-la-rue-tney_fc5fOk-unsplash.jpg"
           className="size-full object-cover"
           alt="Relume placeholder image"

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export function Header1() {
   return (
@@ -14,10 +15,13 @@ export function Header1() {
             </p>
           </div>
           <div>
-            <img
+            <Image
+              priority
               src="/barnabas-davoti-k3bukmaX2GE-unsplash.jpg"
               className="w-full rounded object-cover"
               alt="Relume placeholder image"
+              width={800}
+              height={600}
             />
           </div>
         </div>

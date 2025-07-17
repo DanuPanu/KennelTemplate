@@ -23,7 +23,7 @@ export const Content9 = (props: Content8Props) => {
           </div>
         </div>
         <div>
-          <Image src="/michael-starkie-gdo1m-6H22o-unsplash.jpg" width={2000} height={1000} className="aspect-video w-full object-cover" alt="Koiran kuva" />
+          <Image priority src="/michael-starkie-gdo1m-6H22o-unsplash.jpg" width={1500} height={1000} className="w-full object-cover rounded shadow-lg" alt="Koiran kuva" />
         </div>
       </div>
     </section>
