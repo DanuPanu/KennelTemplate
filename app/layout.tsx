@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Buda } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
+import { Navbar2 } from "./UI/Navbar2";
+import { Footer7 } from "./UI/Footer7";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Heading: Mohave
+const headingFont = Buda({
+  variable: "--font-heading",
   subsets: ["latin"],
+  weight: "300",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Body: Nunito Sans
+const bodyFont = Raleway({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["300", "400", "600", "700"], // säädä tarpeen mukaan
 });
 
 export const metadata: Metadata = {
@@ -25,9 +32,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${headingFont.variable} ${bodyFont.variable} antialiased`}
       >
+        <Navbar2 />
         {children}
+        <Footer7 />
       </body>
     </html>
   );
